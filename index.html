@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ลงทะเบียนรับของที่ละลึกปีใหม่ สหกรณ์ออมทรัพย์ มอ.</h1>
+    <form action="action_page.php" method="post">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+        <label for="PhoneNum">เบอร์โทรศัพท์</label>
+        <input type="text" id="PhoneNum" name="PhoneNum" placeholder="Phone Number"><br><br>
+        <label for="gift">โปรดเลืองของที่ระลึก</label><br><br>        
+        <input type="radio" name="gift" id="gift" value="ชุดเครื่องนอน">ชุดเครื่องนอน<br>
+        <input type="radio" name="gift" id="gift" value="ผ้านวม">ผ้านวม<br>
+        <input type="radio" name="gift" id="gift" value="กระเป๋าเดินทาง">กระเป๋าเดินทาง<br>
+        <input type="radio" name="gift" id="gift" value="หมอนยางพารา">หมอนยางพารา<br>
+        <br><label for="email">กรุณากรอก Username (อีเมล์): </label>
+        <input type="email" name="email" id="Username" placeholder="Email"><br>
+        <br><label for="Password">กรุณากรอก Password : </label>
+        <input type="password" name="Password" id="Password" placeholder="Password">
+        <h3>โปรดระบุประเภทของบัญชีที่มีกับสหกรณ์</h3>
+        <label for="account">เลือกประเภทบัญชี</label>
+        <select name="account" id="account">
+            <option >เงินฝากปลอดภาษี</option>
+            <option>เงินกู้</option>
+            <option >กระแสรายวัน</option>
+            <option>ประจำ</option>
+        </select><br>
+        <label for="stock">จำนวนหุ้นที่มี</label>
+        <input type="number" name="stock" placeholder="จำนวนหุ้นที่มี"><br>
+        <br><label for="news">กรุณาระบุช่องทางที่ได้รับข่าวสารจากสหกรณ์ออมทรัพย์</label><br><br>
+        <input type="checkbox" name="news[]" id="news" value="เว็บไซต์">เว็บไซต์<br>
+        <input type="checkbox" name="news[]" id="news" value="แผ่นพับ">แผ่นพับ<br>
+        <input type="checkbox" name="news[]" id="news" value="อีเมลล์">อีเมลล์<br><br>
+        <label for="comment">แสดงความคิดเห็น</label><br>
+        
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="แสดงความคิดเห็น
+        "></textarea><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
